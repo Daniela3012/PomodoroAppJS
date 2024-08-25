@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Freeman", sans-serif;
+}
+.container {
+    height: 100vh;
+    background-image: url('img/newyork.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.structure {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.pomodoro {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    flex-direction: column;
+}
+.pomodoro__circle {
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url('img/wave.svg');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+.pomodoro__clock {
+    color: #fff;
+    font-size: 2.3rem;
+}
+.pomodoro__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pomodoro__input {
+    all: unset;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #050505;
+    flex: 1;
+}
+.pomodoro__input:focus {
+    border: 1px solid #0c36ac;
+    box-shadow: 0 0 5px #245c9b81;
+}
+.pomodoro__btn {
+    font-family: inherit;
+    border-radius: 30px;
+    background-color: #E85467;
+    color: #fff;
+    font-size: 1.5rem;
+    border-style: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    transition: background-color 0.4s ease;
+}
+.pomodoro__btn:hover {
+    background-color: #001220;
+}
+.pomodoro__conttask {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px 0px #E85467;
+    background-color: #f7d4d1;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.pomodoro__icon {
+    display: none;
+}
+
+.pomodoro__icon--active {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.pomodoro__icon--active:hover {
+    background-color: #fff;
+    padding: 3px;
+}
+.pomodoro__task {
+    font-size: 1.3rem;
+}
